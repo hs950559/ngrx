@@ -1,0 +1,12 @@
+{
+    "gitbook": "3.2.2",
+    "title": "CSS Flexbox",
+    "description": "CSS Flexbox in depth",
+    "language": "en",
+    "plugins": ["addcssjs", "expandable-chapters"],
+    "pluginsConfig": {
+        "addcssjs": {
+            "css": ["css/bootstrap.css", "css/main.css"]
+        }
+    }
+}

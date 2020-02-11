@@ -1,0 +1,49 @@
+.book .book-summary .exc-trigger{
+    right: 12px;
+    left: auto;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h1, .book .book-body .page-wrapper .page-inner section.normal h2, .book .book-body .page-wrapper .page-inner section.normal h3, .book .book-body .page-wrapper .page-inner section.normal h4 {
+    color: #fff;
+    font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    padding: 2px 8px 5px;
+    margin-top: 0;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal{
+    position: relative;
+    overflow: unset;
+    width: 100%;
+}
+
+.normal .section-container{
+    position: absolute;
+    width: 100%;
+}
+
+.normal h2, .normal h3 {
+    background-color: #ff7518;
+    border: 1px solid #ff7518;
+}
+.normal h1 {
+    background-color: #9954bb;
+    border: 1px solid #522967;
+}
+.alert h1, .panel h1, .alert h2, .panel h2, .alert h3, .panel h3 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+pre code {
+    font-size: 14px !important;
+}
+
+.card {
+    border: 1px solid #7643a8;
+    padding: 15px !important;
+}
+.card h2, .card h3 {
+    color: #333333 !important;
+    margin: 0 !important;
+}
