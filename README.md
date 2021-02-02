@@ -1,3 +1,60 @@
+# State Management
+
+# Why State Management?
+
+- Performance
+- Testability
+- Tooling
+- The ability to keep the application predictable 
+- Simple to reason about. 
+- Decoupled architecture
+- Easier Undo/Redo possibility
+
+
+## Reducer
+
+Change store based on action.
+
+
+
+1. Single source of truth
+
+	```
+	single place to store your data. you want data look into store
+	```
+
+2. Keep component stateless, avoid un-necessary traversing.
+
+	![Data Flow](images/store.svg)
+
+	`SingleUserComponent` never needs any albums related information but it's have to hold and pass it to children. 
+
+	Bit complex to manage this flow child component just 2-3 level down in tree.
+
+	** Solution to above inter-communication issue **
+
+	![Data Flow Store](images/store-soln.svg)
+
+	<div class="card border-info mb-3">
+	  <div class="card-header text-info">Caution!</div>
+	  <div class="card-body">
+	    <p class="card-text">There are situations where components are dependent on each other at completely different points in the component tree, and passing inputs 10 levels up the tree and callback functions 10 levels down the tree then 5 levels up another branch is not scalable in complexity.</p>
+	  </div>
+	</div>
+
+	<div class="card border-success mb-3">
+	  <div class="card-header text-success">So we need store</div>
+	  <div class="card-body">
+	    <p class="card-text">As it provides a solution for more complex component interaction solution.</p>
+	  </div>
+	</div>
+
+3. Store provide a client-side cache if needed, to avoid doing repeated Ajax requests.
+
+## Store Concept
+
+
+
 # Ngrx
 
 ## Setup
@@ -9,6 +66,8 @@ ng add @ngrx/store-devtools
 
 ng g store auth/Auth --module auth.module.ts
 ```
+
+
 
 ## Create action
 
@@ -128,6 +187,18 @@ export class SideEffects {
 	}
 }
 ```
+
+# Resources
+
+- Ultimate NGRX: What is State Management?
+https://youtu.be/N_UQx8dPPkc
+
+- Real world angular with ngrx
+https://github.com/stefanoslig/angular-ngrx-nx-realworld-example-app
+
+- JS to TS
+http://www.jsontots.com/
+
 
 
 

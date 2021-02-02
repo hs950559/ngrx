@@ -4,7 +4,6 @@
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h1, .book .book-body .page-wrapper .page-inner section.normal h2, .book .book-body .page-wrapper .page-inner section.normal h3, .book .book-body .page-wrapper .page-inner section.normal h4 {
-    color: #fff;
     font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
     font-weight: 300;
     line-height: 1.1;
@@ -39,11 +38,7 @@ pre code {
     font-size: 14px !important;
 }
 
-.card {
-    border: 1px solid #7643a8;
-    padding: 15px !important;
-}
-.card h2, .card h3 {
-    color: #333333 !important;
-    margin: 0 !important;
+.markdown-section h1, .markdown-section h2, .markdown-section h3 {
+    color: #fff;
+    padding: 10px !important;
 }
